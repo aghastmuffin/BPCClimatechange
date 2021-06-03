@@ -6,3 +6,5 @@ try:
         print('A required module (try tkinter) was not available. Please pip this module in. \n Thanks!')
 except:
     print('A required module (try pygame) was not available. Please pip this module in. \n Thanks!')
+print('Done')
+messagebox.showerror('Disclaimer', 'Disclaimer: \n I didn\'t have a lot of time to work on this, and pygame is hard to use')
