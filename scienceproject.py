@@ -7,6 +7,7 @@ print('A fun fact while we load. This project has 200+ lines of code!')
 sleep(2)
 current = ('')
 points = int(0)
+var = str('')
 def cl():
     os.system('cls')
 def clear():
@@ -49,7 +50,9 @@ print('By Levi')
 print('')
 en()
 cl()
-def info():
+print('Would you like to see the info? (This may spoil the quiz) (Y/n)')
+var = input('> ')
+if var == ('Y'):
     print('Part 1: Info')
     print('')
     print('Topic: Oceans rising')
@@ -103,14 +106,8 @@ def info():
     sleep(0.5)
     print('A solution might be to use reusable energy, and not use as much plastic bottles, and to not heat and cool your house as much')
     end()
-print('Would you like to see the info? (This may spoil the quiz) (Y/n)')
-yn = input('>>> ')
-if var == ('Y'):
-    info()
 elif var == ('n'):
     print('skipping part 1: info!')
-else:
-    print('Please use a CAPITOL Y, and a lowercase n, thanks!')
     
 #Finished part one
 print('Part: 2 (Quiz)')
