@@ -49,9 +49,7 @@ print('By Levi')
 print('')
 en()
 cl()
-print('Would you like to see the info? (This may spoil the quiz) (Y/n)')
-yn = input('>>> ')
-if var == ('Y'):
+def info():
     print('Part 1: Info')
     print('')
     print('Topic: Oceans rising')
@@ -105,10 +103,15 @@ if var == ('Y'):
     sleep(0.5)
     print('A solution might be to use reusable energy, and not use as much plastic bottles, and to not heat and cool your house as much')
     end()
+print('Would you like to see the info? (This may spoil the quiz) (Y/n)')
+yn = input('>>> ')
+if var == ('Y'):
+    info()
 elif var == ('n'):
     print('skipping part 1: info!')
 else:
     print('Please use a CAPITOL Y, and a lowercase n, thanks!')
+    
 #Finished part one
 print('Part: 2 (Quiz)')
 sleep(0.5)
