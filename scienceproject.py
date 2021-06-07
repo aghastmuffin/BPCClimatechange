@@ -44,6 +44,8 @@ def load():
 cl()
 name = input('(this data will not be saved) Before we begin, Please enter your name: ')
 cl()
+print('Welcome', name, ',')
+print('')
 print('Oceans Rising (quiz)')
 print(current)
 print('By Levi')
