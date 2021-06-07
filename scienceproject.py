@@ -1,6 +1,7 @@
 #starting
 from time import process_time, sleep
 import os
+os.system('cls')
 from random import randrange
 print('A fun fact while we load. This project has 200+ lines of code!')
 sleep(2)
@@ -77,13 +78,6 @@ sleep(0.5)
 print('')
 sleep(0.5)
 end()
-
-
-
-
-
-
-
 #Finished part one
 print('Part: 2 (Quiz)')
 sleep(0.5)
@@ -189,12 +183,27 @@ print('3 - Donating to ocean rescue projects')
 print('4 - Using reusable stuff')
 print('5 - 1 & 2')
 print('6 - 3 & 4')
-print('7 - None of the above help the earth in any way')
+print('7 - None of the above remotely help the earth in any way')
 print('Please enter the number corresponding to the correct question:')
 answer4 = input('>>> ')
 if answer4 == ('6'):
     points = (points + 1)
     answer4 = ('correct')
+skilllevel = str('error displaying message')
+print(points)
+po = str(points)
+if po == ('5'):
+    skilllevel = str('Master Dolphin (all correct)')
+if po == ('4'):
+    skilllevel = str('Yong dolphin (1 to 2 missed)')
+if po == ('3'):
+    skilllevel = str('whale (2 to 3 missed)')
+if po == ('2'):
+    skilllevel = str('Young wale, you have much to learn (3, 4 missed)')
+if po == ('1'):
+    skilllevel = str('Coral (You got 1 right)')
+if po == ('0'):
+    skilllevel = str('sand (0 right)')
 load()
 sleep(2)
 clear()
@@ -205,13 +214,13 @@ print('|                                                                 |')
 sleep(randrange(1, 2))
 print('|                    You Finished the Quiz!!                      |')
 sleep(randrange(1, 2))
-print('|                   You are a: [skill level]                      |')
+print('|                   You are a:', skilllevel, '                                 |')
 sleep(randrange(1, 2))
-print('|                     You have', points, 'Points!                   |')
+print('|                     You have', points, 'Points!                        |')
 sleep(randrange(1, 2))
 print('|                                                                 |')
 sleep(randrange(1, 2))
-print('|           Congrats,', name, '                                      |')
+print('|           Congrats,', name, '                                        |')
 sleep(randrange(1, 2))
 print('|                                                                 |')
 sleep(randrange(1, 2))
